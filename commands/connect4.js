@@ -5,7 +5,7 @@ module.exports = {
     description: "get 4 in a row to win",
     arguments: "<@user>",
     cooldown: 3,
-    execute(message, args){
+    execute(message, args) {
         function getUserFromMention(mention){
             if(!mention) return;
             
