@@ -1,12 +1,13 @@
+function randomGen() {
+    return Math.round(Math.random() * 1000);
+}
+
 module.exports = {
     name: "mine",
     description: "mines for bitcoins",
     arguments: "",
     cooldown: 30,
     execute(message, args, con) {
-        function randomGen() {
-            return Math.round(Math.random() * 1000);
-        }
         x = Math.round(Math.random() * 100);
         numCoins = 0;
         if (x >= 98) {
